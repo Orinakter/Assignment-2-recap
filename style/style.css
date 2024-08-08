@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.display-flex{
+    display: flex;
+    gap: 30px;
+    padding: 20px 70px;
+    
+}
+
+.nav-list{
+    list-style: none;
+    padding-top: 10px;
+   
+}
+.nav-color{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-size: 18px;
+    
+}
+.span{
+    width: 52px;
+    height: 22px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 40px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px 8px 20px;
+    margin-top: 15px;
+}
+    
+.navbar{
+    justify-content: space-between;
+    /* margin: 0 auto; */
+    background-color:rgb(33, 33, 33);
+    
+   
+}
+
+.logo-color{
+    width: 132px;
+    height: 43px;
+    color: rgb(230, 83, 60);
+    font-size: 36px;
+    font-weight: 800;
+    
+}
+
+.nabvar , .banner{
+    max-width: 1440px;
+    height: 580px;
+    margin: 0 auto;
+    background:rgb(33, 33, 33);
+    
+    
+}
+.banner-text{
+    width: 515px;
+    height: 270px;
+    margin-left: 120px;
+    margin-bottom: 100px;
+    
+    
+}
+.banner-text h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 900;
+
+}
+
+.banner-text p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 400;
+
+}
+/* #font{
+    font-family: "Michroma", sans-serif;
+} */
+
+.primary-btn{
+    width: 220px;
+    height: 50px;
+    border-radius: 42px;
+     background: rgb(230, 83, 60);
+     color: rgba(255, 255, 255);
+
+}
+.secondary-btn{
+    width: 220px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    background:rgb(33, 33, 33); 
+    color: white;
+    
+
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-image img{
+    margin-right: 128px;
+
+} 
