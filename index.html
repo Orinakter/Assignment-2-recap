@@ -5,45 +5,290 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2-recap</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/b9757d8d64.js" crossorigin="anonymous"></script>
+
+    
 </head>
-<body>
+<body class="container">
     <header>
-        <nav class="navbar display-flex">
-            <div class="nav-logo">
-                <h3 class="logo-color">Fitness</h3>
-
-            </div>
-            <div class="nav-option ">
-                <ul class="nav-links display-flex">
-                    <li class="nav-list"><a href=""class="nav-color"><span class="span">Home</span></a></li>
-                    <li class="nav-list"><a href=""class="nav-color">Service</a></li>
-                    <li class="nav-list"><a href=""class="nav-color">Contact</a></li>
-                    <li class="nav-list"><a href=""class="nav-color">About</a></li>
+        <nav>
+            <h2><em>Fitness</em></h2>
+            <div>
+                <ul id="menu">
+                    <li id="home"><a href="">Home</a></li>
+                    <li id="service"><a href="">Service</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">About</a></li>
                 </ul>
-
-            </div> 
-        </nav>
-
-        <div class="banner">
-            <div class="banner-text">
-                <h1>Get body in<br><span id="font">Shape</span> & stay<br>healthy</h1><br>
-                <p>Exercise regularly, eat balanced meals, stay hydrated, sleep well, manage stress, and maintain a positive mindset.</p><br>
-                <button class="primary-btn">Join Club Now!</button>
-                <button class="secondary-btn">Download App</button>
             </div>
-             <div class="banner-image">
+            <div class="ham-bar"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <section class="hero-banner">
+            <div id="hero-banner-content">
+                <h1>Get body in <br><span id="shape">shape</span> & stay <br>healthy</h1>
+                <p class="text-color">Exercise regularly, eat balanced meals, stay hydrated, sleep well, manage stress, and maintain a positive mindset.</p>
+                <div>
+                    <button class="Primary-btn">Join Club Now!</button>
+                    <button class="secondary-btn">Download App</button>
+                </div>
+            </div>
+            <div id="hero-banner-img">
                 <img src="images/banner-image.png" alt="">
-             </div>
-
-        </div>
-
-        </div>
-        
-
-        
+                <div class="banner-background-blur text-workout">
+                    <h3>500+</h3>
+                    <p class="text-color">Free Workout Videos</p>
+                </div>
+                <div class="banner-background-blur text-tutorial">
+                    <div id="ball"></div>
+                    <h3>350+</h3>
+                    <p class="text-color">Videos tutorial</p>
+                </div>
+            </div>
+        </section>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main>
+       
+
+        <!-- Habit section start -->
+
+        <section class="section-one">
+            <div class="habit">
+                <h1 class="text-tittle">Change Your Habit</h1>
+                <p class="text-color">Start small and set clear, achievable fitness goals. Establish a consistent workout routine and prioritize balanced nutrition. Stay hydrated and ensure you get 7-9 hours of sleep nightly. Find enjoyable physical activities, track your progress, and stay accountable to your goals. Be patient and persistent for lasting fitness results.
+                </p>
+            </div>
+            <div class="movement">
+                <div>
+                    <img src="images/movement.png" alt="">
+                    <h3 class="text-tittle">Movement</h3>
+                    <p class="text-color">Movement is Incorporate cardio, strength training, flexibility, and balance exercises to boost endurance, build muscle, improve mobility, and overall health.</p>
+                </div>
+                <div>
+                    <img src="images/time.png" alt="">
+                    <h3 class="text-tittle">Time</h3>
+                    <p class="text-color">
+                        Schedule fitness into your routine by dedicating 30 minutes daily to exercise, focusing on consistency for long-term health benefits.</p>
+                </div>
+                <div>
+                    <img src="images/practice.png" alt="">
+                    <h3 class="text-tittle">Practice</h3>
+                    <p class="text-color">Practice Consistently engage in varied exercises, prioritize proper form, stay hydrated, track progress, and allow time for recovery and rest.</p>
+                </div>
+                <div>
+                    <img src="images/weightloss.png" alt="">
+                    <h3 class="text-tittle">Weight Loss</h3>
+                    <p class="text-color">Combine regular exercise with a balanced, calorie-controlled diet, stay hydrated, prioritize protein, and practice consistency for effective weight loss.</p>
+                </div>
+            </div>
+        </section>
+        <!-- habit section end here -->
+
+        <!-- Run section start here -->
+
+        <<section class="run-section-start">
+
+            <div class="container run-content">
+               <div class="run-content-text">
+                   <h3>Run an Extra Mile Easily</h3><br>
+                   <p> Suggests pushing the limits effortlessly. With consistent training, proper nutrition, and the right mindset, you can surpass your goals and enjoy a more rewarding running experience.</p>
+                   <button class="run-btn">Join Now</button>
+       
+               </div>
+               <div class="run-image">
+                   <img src="images/run.jpg" alt="">
+       
+               </div>
+       
+           </div >
+       </section>
+
+        <!-- run section End here -->
+         <!-- training section start here -->
+
+        <section class="section-three">
+            <div class="exercises">
+                <h3 class="text-tittle run">Trainings and Exercises</h3>
+                <p class="text-color"> Combine various training types for optimal fitness: <br>cardiovascular exercises (running, cycling), strength training (squats, deadlifts), flexibility work (yoga, stretching), balance training (single-leg stands), HIIT (burpees, sprints), and core exercises (planks, Russian twists). Incorporate low-impact workouts for recovery and active rest to enhance overall health.</p>
+            </div>
+            <div class="exercise-img-first-three">
+                <div>
+                    <img src="images/exercise-1.jpg" alt="">
+                </div>
+                <div><img src="images/exercise-2.png" alt=""></div>
+                <div class="display-hide"><img src="images/exercise-3.png" alt=""></div>
+            </div>
+            <div class="exercise-img-second-three">
+                <div><img src="images/exercise4.png" alt=""></div>
+                <div><img src="images/exercise5.jpg" alt=""></div>
+                <div class="display-hide"><img src="images/exercise6.jpg" alt=""></div>
+            </div>
+        </section>
+
+        <!-- training section End here -->
+
+        <!-- BMI section Start Here-->
+<section class="bmi-calculator">
+            <div class="bmi-text">
+                <h1 class="text-tittle run">BMI Calculator</h1>
+                <p class="text-color">To calculate BMI, divide your weight in kilograms by your height in meters squared. For pounds and inches, divide weight by height in inches squared and multiply by 703.</p>
+            </div>
+            <div class="table-form">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>BMI </th>
+                                <th>Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25-29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 - and Above</td>
+                                <td>Obese</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="calculate-your-bmi">
+                    <h3 class="text-tittle">Calculate your BMI</h3>
+                    <p class="text-color">We believe fitness should be accessible to everyone, <br>everywhere, regardless
+                        of income or
+                        access to a gym. </p>
+                    <div>
+                        <div class="input">
+                            <input type="text" placeholder="Height/cm">
+                            <input type="text" placeholder="Weight/kg">
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Age">
+                            <select name="" id="">
+                                <option value="" disabled selected>Sex</option>
+                                <option value="option1">Male</option>
+                                <option value="option2">Female</option>
+                                <option value="option3">Others</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="select-full">
+                                <select name="" id="">
+                                    <option value="option1">Select an activity factor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="Primary-btn">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teammate">
+            <div class="meet-team">
+                <h3 class="text-tittle run">Meet Our Team</h3>
+                <p class="text-color">Meet our fitness team: Jane Smith, a personal trainer specializing in strength training; John Doe, a nutritionist with expertise in balanced diets; Emily Brown, a yoga instructor focusing on flexibility; and Michael Johnson, a fitness coach skilled in HIIT and endurance.</p>
+            </div>
+            <div class="teammate-img-container">
+                <div class="trainer1">
+                    <img src="images/trainer1.png" alt="">
+                    <div class="trainer1-text">
+                        <h3 class="text-tittle">Jerome Bell</h3>
+                        <p class="text-color">Trainer</p>
+                    </div>
+
+                </div>
+                <div class="trainer1">
+                    <img src="images/trainer2.png" alt="">
+                    <div class="trainer1-text">
+                        <h3 class="text-tittle">Cameron Willi</h3>
+                        <p class="text-color">Trainer</p>
+                    </div>
+
+                </div>
+                <div class="trainer1 display-hide">
+                    <img src="images/trainer3.png" alt="">
+                    <div class="trainer1-text">
+                        <h3 class="text-tittle">Darrell Steward</h3>
+                        <p class="text-color">Trainer</p>
+                    </div>
+                </div>
+                <div class="trainer1">
+                    <img src="images/trainer4.png" alt="">
+                    <div class="trainer1-text">
+                        <h class="text-tittle">Dianne Russel</h>
+                        <p class="text-color">Trainer</p>
+                    </div>
+                </div>
+                <div class="trainer1">
+                    <img src="images/trainer5.png" alt="">
+                    <div class="trainer1-text">
+                        <h3 class="text-tittle">Cody Fisher</h3>
+                        <p class="text-color">Trainer</p>
+                    </div>
+                </div>
+                <div class="trainer1 display-hide">
+                    <img src="images/trainer6.png" alt="">
+                    <div class="trainer1-text">
+                        <h3 class="text-tittle">Theresa Webb</h3>
+                        <p class="text-color">Trainer</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        </main>
+
+    </main>
+    <!-- BMI section End Here -->
+     <!-- footer section Start here -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer">
+                <h2 class="fitness"><em>Fitness</em></h2>
+                <p class="text-color">Fitness involves regular exercise, balanced nutrition, and a healthy lifestyle. It includes cardiovascular workouts, strength training, flexibility exercises, and proper rest, all contributing to improved health, strength, and overall well-being.</p>
+            </div>
+            <div class="get-started">
+                <h2 class="text-tittle">Get Started</h2>
+                <ul class="text-tittle footer-text">
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Affiliate Program</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+            <div class="get-started">
+                <h2 class="text-tittle">Get Started</h2>
+                <ul class="text-tittle footer-text">
+                    <li><a href="">Fitness</a></li>
+                    <li><a href="">Platform</a></li>
+                    <li><a href="">Workout Libary</a></li>
+                    <li><a href="">App Design</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <hr>
+
+            <p class="text-color right-reserve">All right reserved @Fitness 2024</p>
+
+        </div>
+
+    </footer>
+
+    <!-- footer section End here -->
     
 </body>
 </html>

@@ -1,121 +1,481 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama?styles=170364");
 
-
-body{
-    font-family: "Inter", sans-serif;
-}
-
-*{
-    padding: 0;
-    margin: 0;
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
-.display-flex{
-    display: flex;
-    gap: 30px;
-    padding: 20px 70px;
-    
-}
+/* default Style here*/
 
-.nav-list{
-    list-style: none;
-    padding-top: 10px;
-   
+* {
+  margin: 0;
+  padding: 0;
 }
-.nav-color{
-    text-decoration: none;
-    color: rgb(255, 255, 255); 
-    font-size: 18px;
-    
-}
-.span{
-    width: 52px;
-    height: 22px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 40px;
-    background: rgb(230, 83, 60);
-    padding: 8px 20px 8px 20px;
-    margin-top: 15px;
-}
-    
-.navbar{
-    justify-content: space-between;
-    /* margin: 0 auto; */
-    background-color:rgb(33, 33, 33);
-    
-   
-}
-
-.logo-color{
-    width: 132px;
-    height: 43px;
-    color: rgb(230, 83, 60);
-    font-size: 36px;
-    font-weight: 800;
-    
-}
-
-.nabvar , .banner{
-    max-width: 1440px;
-    height: 580px;
-    margin: 0 auto;
-    background:rgb(33, 33, 33);
-    
-    
-}
-.banner-text{
-    width: 515px;
-    height: 270px;
-    margin-left: 120px;
-    margin-bottom: 100px;
-    
-    
-}
-.banner-text h1{
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    font-weight: 900;
+.container {
+  font-family: Inter;
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
 
 }
 
-.banner-text p{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 15px;
-    font-weight: 400;
+/* Shared Style start here*/
+
+.text-tittle {
+  color: #ffffff;
+}
+.text-color {
+  color: rgba(255, 255, 255, 0.5);
+}
+.Primary-btn {
+  color: #ffffff;
+  background: #e6533c;
+  border-radius: 46px;
+  height: 54px;
+  width: 226px;
+  font-size: 1.1rem;
+  border: none;
+}
+.secondary-btn {
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 46px;
+  height: 54px;
+  width: 226px;
+  font-size: 1.1rem;
+  margin-left: 20px;
+}
+/* Shared Style */
+
+
+/* Navbar Style start here*/
+
+nav h2,
+.fitness {
+  color: #e6533c;
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav {
+  margin-top: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#menu {
+  color: #ffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: 465px;
+  height: 46px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  justify-items: center;
+}
+#home {
+  color: #ffffff;
+  background: #e6533c;
+  border-radius: 46px;
+  padding: 0.6rem 1.8rem 0.6rem 1.8rem;
+}
+
+/* navbar style end here  */
+
+/* Hero Section style */
+
+.hero-banner {
+  margin-top: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-banner h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+#shape {
+  font-family: Miama;
+}
+#hero-banner-content {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  row-gap: 2rem;
+}
+#hero-banner-img {
+  /* width: 45%; */
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.banner-background-blur {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  width: 190px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.text-workout {
+  position: absolute;
+  top: 180px;
+  right: 0px;
+}
+.text-workout h3 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.text-tutorial {
+  padding-left: 50px;
+  position: absolute;
+  bottom: 100px;
+  left: -80px;
+}
+#ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(230, 83, 60);
+  bottom: 27px;
+  left: 5px;
+}
+/* Hero Section style */
+
+/* Habit section style start here*/
+
+.habit {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+  gap: 16px;
+  width: 70%;
+  margin: 0 auto;
+}
+.habit h1,
+.run {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.movement {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding-top: 60px;
+}
+.movement img {
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.movement h3,
+p {
+  padding: 15px 20px;
+}
+
+/* Habit section style End here*/
+
+/* Run section  styles start here */
+
+.run-section-start{
+  max-width: 1440px;
+  height: 470px;
+  background:rgb(0, 0, 0); 
+  padding-top: 50px;
 
 }
-/* #font{
-    font-family: "Michroma", sans-serif;
-} */
 
-.primary-btn{
-    width: 220px;
-    height: 50px;
-    border-radius: 42px;
-     background: rgb(230, 83, 60);
-     color: rgba(255, 255, 255);
-
-}
-.secondary-btn{
-    width: 220px;
-    height: 50px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 42px;
-    background:rgb(33, 33, 33); 
-    color: white;
-    
+.run-content{
+  
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 1000px;
+  height: 350px;
+  margin: 0 auto;
+  background:rgb(33, 33, 33);
+  padding-top: 50px;
 
 }
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.run-content-text{
+  margin: 0 auto;
+  background:rgb(33, 33, 33);
+  
+  
+}
+.run-content-text h3{
+  width: 443px;
+  height: 116px;
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 900;
+  text-align: left;
 }
 
-.banner-image img{
-    margin-right: 128px;
 
-} 
+.run-content-text p{
+  width: 443px;
+  height: 72px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+
+}
+.run-btn{
+  width: 224px;
+  height: 54px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  padding: 16px 40px 16px 40px;
+  padding-left: 60px;
+
+}
+
+.run-image img{
+  width: 366px;
+  height: 312px;
+  border-radius: 18px;
+  padding-left: 100px;
+
+}
+
+/* Run section  styles start here */
+
+/* Training And exercise style start here*/
+
+.exercises {
+  margin: 60px auto;
+  width: 50%;
+  text-align: center;
+}
+.section-three img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.exercise-img-first-three {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 250px;
+}
+.exercise-img-second-three {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-rows: 250px;
+}
+
+/* Training And exercise style start here*/
+
+/* BMI section style start here */
+
+.table-form {
+  display: flex;
+  justify-content: space-between;
+}
+.bmi-text {
+  text-align: center;
+  margin: 70px 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 216px;
+  color: #ffffff80;
+}
+table th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 18px;
+  text-align: left;
+  color: #ffffff;
+}
+table td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 18px;
+}
+.table-form {
+  padding: 50px;
+  background: rgb(34, 34, 34);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.calculate-your-bmi p {
+  margin-bottom: 1rem;
+}
+.input {
+  display: flex;
+  gap: 3%;
+}
+input,
+select {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+.select-full {
+  margin-bottom: 10px;
+}
+.about {
+  display: flex;
+  margin-top: 80px;
+}
+
+.about-img {
+  display: flex;
+  width: 50%;
+}
+.about-img img {
+  width: 100%;
+  height: auto;
+  border: 5px solid#e6533c;
+  position: relative;
+  object-fit: cover;
+}
+
+.about-img-one img {
+  border-radius: 30px 0;
+}
+.about-one-text {
+  position: absolute;
+  background-color: #e6533c;
+  border-radius: 0 30px;
+  padding: 20px;
+  text-align: center;
+  margin-left: -25%;
+  margin-top: -55%;
+
+}
+.about-img-two {
+  position: relative;
+  margin-top: 120px;
+  margin-left: -82px;
+}
+.about-img-two img {
+  border-radius: 0 30px;
+  height: 80%;
+}
+.about-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.teammate-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(34, 34, 34);
+  border-radius: 1rem;
+  margin-top: 50px;
+}
+.meet-team{
+  width: 70%;
+  margin: 0 auto;
+}
+.teammate {
+  text-align: center;
+}
+
+.teammate-img-container img {
+  margin-top: 25px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1rem;
+  filter: brightness(80%);
+}
+
+/* Footer Section starts here */
+
+.trainer1 {
+  position: relative;
+}
+.trainer1-text {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+}
+
+.get-started > ul > li {
+  list-style: none;
+}
+.get-started > ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.get-started {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+  height: 300px;
+  padding-left: 150px;
+}
+hr {
+  width: 60%;
+  margin: 0 auto;
+}
+.right-reserve {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.ham-bar{
+  color: #ffffff;
+  display: none;
+}
+/* Responsive section start here */
+
+
+
+
+
+
+
